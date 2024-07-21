@@ -1,15 +1,45 @@
+import { useEffect, useState } from "react";
 import "../styles/dashboard.css"
+import { IoIosAddCircle } from "react-icons/io";
+import LostItemForm from "../components/LostItemForm";
+interface ItemDetails {
+  name: string;
+  place: string;
+  details: string;
+  image: File | null;
+}
 
 function Dashboard() {
-    return (
-      <div className="main-box">  
+  const [showPopup, setShowPopup] = useState(false);
 
-        <div className="nav">
-          
-        </div>   
+  const handleFormSubmit = (itemDetails: ItemDetails) => {
+    console.log('Submitted item details:', itemDetails);
+    // Here you can process the submitted data
+    // For example, send it to a server or update your application state
+    
+    // Close the popup
+    setShowPopup(false);
+  };
 
-      </div>
-    )
-  }
-  
+  return (
+    <div className="container">  
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <button className="close-button" onClick={() => setShowPopup(false)}>
+              &times;
+            </button>
+            <LostItemForm onSubmit={handleFormSubmit} />
+          </div>
+        </div>
+      )}
+
+      <div className="nav">
+        <p>Lost&Found</p>
+        <IoIosAddCircle onClick={() => setShowPopup(!showPopup)} style={{ fontSize: "2rem" }} />
+      </div>   
+    </div>
+  )
+}
+
 export default Dashboard;
