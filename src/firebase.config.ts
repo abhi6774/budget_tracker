@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBCXe7ww5TSx04r77Hg-ZOGsRx9ZDRmQcM",
-  authDomain: "lostfound-b1470.firebaseapp.com",
-  projectId: "lostfound-b1470",
-  storageBucket: "lostfound-b1470.appspot.com",
-  messagingSenderId: "1089289092678",
-  appId: "1:1089289092678:web:3429f3bb51c7617c485447"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
