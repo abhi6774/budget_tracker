@@ -7,7 +7,9 @@
   margin-top: 40px;
   transition: height 0.4s;
 }
-
+.loginLink{
+  color: "white",
+}
 .input-container input,
 .input-container textarea {
   position: absolute;

@@ -11,9 +11,9 @@ import BlurContainer from "../components/BlurContainer";
 import InputField from "../components/InputField";
 import { useEffect, useState } from "react";
 import { GoogleButton } from "../components/GoogleButton";
-
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { authenticateWithGoogle, signupWithEmail, useAuth } from "../contexts/AuthContext";
+import "../styles/form.css"
 
 const theme = createTheme({
   palette: {
@@ -210,6 +210,24 @@ export default function SignUpPage() {
                     title="SignIn With Google"
                     handle={() => authenticateWithGoogle()}
                   />
+                </Box>
+                <Box
+                  sx={{
+                    width: "calc(100% - 60px)",
+                    transition: "0.2s",
+                    textAlign: "center",
+                    textDecoration:"none",
+                    "&:active": {
+                      scale: "0.95",
+                    },
+                  }}
+                >
+                  <Link
+                    to={"/login"}
+                    style={{color:"white", textDecoration:"Underline"}}
+                  >
+                  Login
+                </Link>
                 </Box>
                 <Box height={"80px"} />
               </form>
