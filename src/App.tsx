@@ -5,6 +5,7 @@ import SignUpPage from './pages/signup'
 import LogInPage from './pages/login'
 import Homepage from './pages/Homepage'
 import SetupAccountPage from './pages/SetupAccountPage'
+import Dashboard from './pages/Dashboard'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/signup" Component={SignUpPage} />
         <Route path="/login" Component={LogInPage} />
         <Route path="/setup" Component={SetupAccountPage} />
+        <Route path="/Dashboard" Component={Dashboard} />
       </Routes>
     </AuthProvider>
   </BrowserRouter>

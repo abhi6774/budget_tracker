@@ -1,3 +1,5 @@
+import '../styles/login.css'
+
 import {
   Box,
   Button,

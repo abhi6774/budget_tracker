@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import { MouseEventHandler } from "react";
-import GoogleIcon from "../assets/google-logo.svg";
+// import GoogleIcon from "../assets/google-logo.svg";
 
 type TGoogleButtonProps = {
     title: string,

@@ -1,4 +1,4 @@
-
+import '../styles/homepage.css'
 
 function Homepage() {
   return (
@@ -6,4 +6,4 @@ function Homepage() {
   )
 }
 
-export default Homepage
+export default Homepage;
