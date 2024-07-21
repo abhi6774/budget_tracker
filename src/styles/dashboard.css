@@ -1,4 +1,23 @@
-.main-box{
+.container{
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    height: 4rem;
+    width: 100vw;
+    background-color: whitesmoke;
+    padding: 0 3rem;
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
 }
