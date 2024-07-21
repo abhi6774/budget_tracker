@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import "../styles/dashboard.css"
 import { IoIosAddCircle } from "react-icons/io";
 import LostItemForm from "../components/LostItemForm";
+import Card from "../components/Card";
+
+
 interface ItemDetails {
   name: string;
   place: string;
@@ -23,6 +26,7 @@ function Dashboard() {
 
   return (
     <div className="container">  
+      
       {showPopup && (
         <div className="popup">
           <div className="popup-content">
@@ -38,6 +42,17 @@ function Dashboard() {
         <p>Lost&Found</p>
         <IoIosAddCircle onClick={() => setShowPopup(!showPopup)} style={{ fontSize: "2rem" }} />
       </div>   
+
+      <div className="cards">
+        <div className='cardContainer'>
+            <img src="https://img.freepik.com/free-photo/fresh-ripe-apple-white-background-close-up-generative-ai_188544-8731.jpg" alt="this is an image" />
+            <h1>{'item name'}</h1>
+            <p>{"detail"}</p>
+            <p>{"location"}</p>
+            <button>Found it!</button>
+        </div>
+      </div>
+      
     </div>
   )
 }

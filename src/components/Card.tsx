@@ -7,10 +7,9 @@ function Card() {
         
         <img src="https://img.freepik.com/free-photo/fresh-ripe-apple-white-background-close-up-generative-ai_188544-8731.jpg" alt="this is an image" />
         
+        <h1>{"title"}</h1>
   
-        <h1>This is heading for the product</h1>
-  
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia harum hic possimus architecto</p>
+        <p>{"detail"}</p>
 
         <button>Action</button>
 
@@ -18,4 +17,4 @@ function Card() {
   )
 }
 
-export default Card
+export default Card;
