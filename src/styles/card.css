@@ -19,11 +19,21 @@ img{
 }
 
 button{
-    height: 45px;
-    width: 55px;
+   padding: 10px 20px;
     outline: none;
     border: none;
     background: green;
     color: white;
+    
+}
+
+button:hover{
+   padding: 10px 20px;
+    outline: none;
+    border: none;
+    background: rgb(21, 224, 21);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
     
 }
