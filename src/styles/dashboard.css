@@ -24,12 +24,20 @@
 
 .cards{
     height: calc(100vh - 4rem);
-    width: 100vw;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+
 }
 
 .cardContainer{
     outline: 1px solid black;
-    width: fit-content;
+    width: 230px;
+    height: fit-content;
     padding: 1rem;
     border-radius: .5rem;
     margin: 1rem;
